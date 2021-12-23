@@ -1,0 +1,1 @@
+cmd_/home/vergilinyan/filesForAK/hello.ko := ccache arm-eabi-ld -r  -EL -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/vergilinyan/filesForAK/hello.ko /home/vergilinyan/filesForAK/hello.o /home/vergilinyan/filesForAK/hello.mod.o ;  true

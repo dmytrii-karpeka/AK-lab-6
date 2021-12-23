@@ -1,3 +1,3 @@
-/home/vergilinyan/filesForAK/hello.ko
-/home/vergilinyan/filesForAK/hello.o
+/home/vergilinyan/filesForAK6/hello.ko
+/home/vergilinyan/filesForAK6/hello.o
 

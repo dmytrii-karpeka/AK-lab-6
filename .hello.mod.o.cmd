@@ -1,8 +1,8 @@
-cmd_/home/vergilinyan/filesForAK/hello.mod.o := ccache arm-eabi-gcc -Wp,-MD,/home/vergilinyan/filesForAK/.hello.mod.o.d  -nostdinc -isystem /opt/gcc-arm-8.3-2019.03-x86_64-arm-eabi/bin/../lib/gcc/arm-eabi/8.3.0/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Werror=return-type -Wno-format-security -std=gnu89 -fno-PIE -fno-dwarf2-cfi-asm -fno-ipa-sra -mabi=aapcs-linux -mfpu=vfp -funwind-tables -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fomit-frame-pointer -fno-var-tracking-assignments -Wdeclaration-after-statement -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned  -DKBUILD_BASENAME='"hello.mod"' -DKBUILD_MODNAME='"hello"' -DMODULE  -c -o /home/vergilinyan/filesForAK/hello.mod.o /home/vergilinyan/filesForAK/hello.mod.c
+cmd_/home/vergilinyan/filesForAK6/hello.mod.o := ccache arm-linux-gnueabihf-gcc -Wp,-MD,/home/vergilinyan/filesForAK6/.hello.mod.o.d  -nostdinc -isystem /opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/8.3.0/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Werror=return-type -Wno-format-security -std=gnu89 -fno-PIE -fno-dwarf2-cfi-asm -fno-ipa-sra -mabi=aapcs-linux -mfpu=vfp -funwind-tables -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fomit-frame-pointer -fno-var-tracking-assignments -Wdeclaration-after-statement -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned -g  -DKBUILD_BASENAME='"hello.mod"' -DKBUILD_MODNAME='"hello"' -DMODULE  -c -o /home/vergilinyan/filesForAK6/hello.mod.o /home/vergilinyan/filesForAK6/hello.mod.c
 
-source_/home/vergilinyan/filesForAK/hello.mod.o := /home/vergilinyan/filesForAK/hello.mod.c
+source_/home/vergilinyan/filesForAK6/hello.mod.o := /home/vergilinyan/filesForAK6/hello.mod.c
 
-deps_/home/vergilinyan/filesForAK/hello.mod.o := \
+deps_/home/vergilinyan/filesForAK6/hello.mod.o := \
     $(wildcard include/config/module/unload.h) \
     $(wildcard include/config/retpoline.h) \
   include/linux/kconfig.h \
@@ -193,7 +193,7 @@ deps_/home/vergilinyan/filesForAK/hello.mod.o := \
     $(wildcard include/config/debug/atomic/sleep.h) \
     $(wildcard include/config/arch/has/refcount.h) \
     $(wildcard include/config/panic/timeout.h) \
-  /opt/gcc-arm-8.3-2019.03-x86_64-arm-eabi/lib/gcc/arm-eabi/8.3.0/include/stdarg.h \
+  /opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/8.3.0/include/stdarg.h \
   include/linux/linkage.h \
   include/linux/stringify.h \
   include/linux/export.h \
@@ -493,6 +493,6 @@ deps_/home/vergilinyan/filesForAK/hello.mod.o := \
   include/linux/vermagic.h \
   include/generated/utsrelease.h \
 
-/home/vergilinyan/filesForAK/hello.mod.o: $(deps_/home/vergilinyan/filesForAK/hello.mod.o)
+/home/vergilinyan/filesForAK6/hello.mod.o: $(deps_/home/vergilinyan/filesForAK6/hello.mod.o)
 
-$(deps_/home/vergilinyan/filesForAK/hello.mod.o):
+$(deps_/home/vergilinyan/filesForAK6/hello.mod.o):

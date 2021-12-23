@@ -27,12 +27,8 @@ static struct list_head ktime_head = LIST_HEAD_INIT(ktime_head);
 static int __init hello_init(void)
 {
 	int i;
-	if (n > 10)
-	{
-		printk(KERN_CRIT "Critical: the value of parameter is greater than 10.\n");
-		return EINVAL;
-	}
-	else if (n == 0)
+	BUG_ON(n > 10);
+	if (n == 0)
 	{
 		printk(KERN_WARNING "Warning: the value of parameter equals to zero.\n");
 	}
@@ -44,6 +40,10 @@ static int __init hello_init(void)
 	{
 		struct ktime_struct *node;
 		node = kmalloc(sizeof(struct ktime_struct *), GFP_KERNEL);
+		if (i == 7) 
+		{
+			node = NULL;
+		}
 		node->data = ktime_get();
 		list_add(&node->head, &ktime_head);
 		printk(KERN_INFO "Hello, world!\n");
